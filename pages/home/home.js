@@ -30,6 +30,26 @@ Page({
   // 获取用户信息
   handleUserInfo(event) {
     console.log(event)
+  },
+
+  // ----------------监听页面的生命周期函数---------------
+  // 页面被加载出来
+  onLoad() {
+    console.log("onLoad")
+  },
+
+  // 页面显示出来
+  onReady() {
+    console.log("onReady")
+  },
+  onShow() {
+    console.log("onShow")
+  },
+  onHide() {
+    console.log("onHide")
+  },
+  onUnload() {
+    console.log("onUnload")
   }
 
 })
