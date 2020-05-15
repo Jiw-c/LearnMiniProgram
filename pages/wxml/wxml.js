@@ -1,34 +1,42 @@
-// pages/image/image.js
+// pages/wxml/wxml.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imagePath: ''
+    message: "jiw",
+    age: 20,
+    nowDate: new Date().toLocaleString(),
+    isActive: true,
+    isShow: false,
+    nums: [
+      [111,222,333], [1, 2, 3]
+    ],
+    letters: ['a', 'b', 'c']
   },
-  handleChooseImage() {
-    wx.chooseImage({
-      success: (res) => {
-        // 1.取出路径
-        const path = res.tempFilePaths[0]
-
-        //2. 设置imagePath
-          this.setData({
-            imagePath: path
-          })
-      }, 
-    })
-  },
-  handleImageLoad() {
-    console.log("图片加载完成")
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    setInterval(() => {
+      this.setData({
+        nowDate: new Date().toLocaleString()
+      })
+    }, 1000)
+  },
+  handleSwitchColor() {
+    console.log("------------------")
+    this.setData({
+      isActive: !this.data.isActive
+    })
+  },
+  handleSwtichShow() {
+    console.log("------------------")
+    
+    this.setData({
+      isShow: !this.data.isShow
+    })
   },
 
   /**

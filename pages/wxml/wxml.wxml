@@ -1,0 +1,27 @@
+<!--pages/wxml/wxml.wxml-->
+<text>pages/wxml/wxml.wxml</text>
+<!-- 2.Mastache -->
+<view>{{message}}</view>
+<view>{{age >= 18 ? '成年人' : '未成年人'}}</view>
+<view>{{nowDate}}</view>
+
+<button size="mini" bindtap="handleSwitchColor">按钮</button>
+<view class='box {{isActive ? "active" : ""}}'>哈哈哈</view>
+
+<view>-----------条件判断-----------------</view>
+<!-- wx:if使用 -->
+<button size="mini" bindtap="handleSwtichShow">切换显示</button>
+<view wx:if="{{isShow}}">哈哈哈</view>
+
+<!-- wx:for的使用 -->
+<block wx:for="{{nums}}" wx:for-item="inner_nums">
+  <block wx:for="{{inner_nums}}">
+    <view>{{item}}</view>
+  </block>
+</block>
+
+<!-- 4.key的作用:为了高效的更新虚拟DOM -->
+<view>------列表渲染--------------</view>
+<view>
+  <view wx:for="{{letters}}" wx:key="item">{{item}}</view>
+</view>

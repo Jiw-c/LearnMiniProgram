@@ -1,55 +1,65 @@
-// pages/home/home.js
-// getApp()可以获取app.js产生的实例对象
-const app = getApp();
-const name = app.globalData.name;
-const age = app.globalData.age;
-console.log(name,age)
-
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    name: "Jiw",
-    age: 23,
-    students: [
-      {id: 111, name: "aaa", age: 21},
-      {id: 222, name: "bbb", age: 22},
-      {id: 333, name: "ccc", age: 23}
-    ],
-    counter: 0
-  },
-  handIncreaseClick() {
-    // 实时更新界面上数据this.setData()
-    this.setData({
-      counter: this.data.counter + 1
-    })
-  },
-  handRecreaseClick() {
-    this.setData({
-      counter: this.data.counter - 1
-    })
-  },
-  // 获取用户信息
-  handleUserInfo(event) {
-    console.log(event)
+    
   },
 
-  // ----------------监听页面的生命周期函数---------------
-  // 页面被加载出来
-  onLoad() {
-    console.log("onLoad")
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    
   },
 
-  // 页面显示出来
-  onReady() {
-    console.log("onReady")
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+    
   },
-  onShow() {
-    console.log("onShow")
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    
   },
-  onHide() {
-    console.log("onHide")
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+    
   },
-  onUnload() {
-    console.log("onUnload")
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+    
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+    
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+    
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+    
   }
-
 })

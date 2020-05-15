@@ -1,4 +1,10 @@
 /* pages/home/home.wxss */
-.title {
-  color: red;
+/* 样式导入 */
+@import './style/box.wxss';
+.content1 {
+  font-size: 32px;
+}
+
+.content2 {
+  font-size: 64rpx;
 }
