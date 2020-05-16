@@ -1,2 +1,23 @@
 <!--pages/about/about.wxml-->
-<text>hello, world</text>
+<view class="title1">Hello</view>
+<!-- <text>hello, world</text> -->
+<!-- 1.自定义组件的基本使用 -->
+<!-- 使用注册好的自定义组件 -->
+<!-- <my-cpn></my-cpn> -->
+
+<!-- 2.自定义组件的样式细节 -->
+<!-- <my-style/> -->
+
+<!-- 3.给自定义组件传递数据/样式 -->
+<!-- <my-prop title="哈哈哈" titleclass="red"></my-prop>
+<my-prop title="嘿嘿嘿" titleclass="blue"></my-prop>
+<my-prop  titleclass="orange"></my-prop> -->
+
+<!-- 4.组件内部发出事件 -->
+<view>当前计数：{{counter}}</view>
+<my-event bind:increment="handleIncrement"/>
+
+<!-- 6.直接选中组件修改数据/调用方法 -->
+<button bindtap="handleIncrementCpn">修改组件内数据</button>
+<my-sel id="sel-id"></my-sel>
+

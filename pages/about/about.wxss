@@ -1,1 +1,16 @@
 /* pages/about/about.wxss */
+.title1 {
+  color: green;
+}
+
+.red {
+  color: red
+}
+
+.blue {
+  color: blue;
+}
+
+.orange {
+  color: orange;
+}

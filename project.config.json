@@ -52,6 +52,20 @@
 					"id": -1,
 					"name": "分类界面",
 					"pathName": "pages/category/category",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "components/my-cpn/my-cpn",
+					"pathName": "components/my-cpn/my-cpn",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "about",
+					"pathName": "pages/about/about",
 					"scene": null
 				}
 			]

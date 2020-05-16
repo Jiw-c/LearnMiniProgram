@@ -1,4 +1,4 @@
-// pages/text/text.js
+// components/cpn1/cpn1.js
 Page({
 
   /**

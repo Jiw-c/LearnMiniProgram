@@ -1,11 +1,12 @@
-// pages/view/view.js
+// components/my-cpn/my-cpn.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    title: "我是标题",
+    content: "我是内容"
   },
 
   /**

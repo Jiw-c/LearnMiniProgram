@@ -2,8 +2,10 @@
   "pages": [
     "pages/wxml/wxml",
     "pages/home/home",
-    "pages/about/about"
-
+    "pages/about/about",
+    "components/my-cpn/my-cpn",
+    "components/cpn1/cpn1",
+    "components/my-style/my-style"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,5 +16,8 @@
     "enablePullDownRefresh": false
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "my-cpn": "/components/my-cpn/my-cpn"
+  }
 }
