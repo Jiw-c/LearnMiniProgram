@@ -21,3 +21,9 @@
 <button bindtap="handleIncrementCpn">修改组件内数据</button>
 <my-sel id="sel-id"></my-sel>
 
+<!-- 7.插槽的使用 -->
+<my-slot><button>按钮</button></my-slot>
+<my-slot><text>哈哈哈</text></my-slot>
+<my-slot></my-slot>
+
+
